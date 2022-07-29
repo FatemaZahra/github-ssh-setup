@@ -34,3 +34,11 @@ cat filename.pub
 ```
 
 **Step 7:** Go to GitHub --> Settings --> SHS and GPG keys --> New SSH Key --> Paste the SSH Key copied from the terminal --> add a title --> click 'Add SSH key'
+
+**Step 8:** Add your SSH private key to the ssh-agent and store your passphrase in the keychain. Paste the command in terminal and replace filename with the name of the file where key is avavilable.
+```
+ssh-add -K ~/.ssh/filename
+```
+Note: We do not need to use .pub
+
+**Step 9:** Create a new repository on github and follow the steps to init, add, commit and push.
