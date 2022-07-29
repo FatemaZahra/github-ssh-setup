@@ -28,4 +28,9 @@ ls
 ```
 You should see the file name and a **.pub file**
 
+**Step 6:** Paste the command on the terminal, replace the filename with your file where the key is saved and then copy the SSH key received.
+```
+cat filename.pub
+```
 
+**Step 7:** Go to GitHub --> Settings --> SHS and GPG keys --> New SSH Key --> Paste the SSH Key copied from the terminal --> add a title --> click 'Add SSH key'
