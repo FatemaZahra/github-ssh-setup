@@ -1,3 +1,7 @@
+## Link to Markdown file
+[Markdown Documentation techniques](https://github.com/FatemaZahra/markdown_documentation_techniques)
+
+
 # What is Git and Github
 ## Git
 Git is a free, high-quality distributed version control system suitable for tracking modifications in source code in software development. It was originally created as an open-source system for coordinating tasks among programmers, but today it is widely used to track changes in any set of files. 
@@ -88,5 +92,4 @@ git branch -M main
 git remote add origin "your ssh link here"
 git push -u origin main
 ``` 
-## Link to Markdown file
-[Markdown Documentation techniques](https://github.com/FatemaZahra/markdown_documentation_techniques)
+
