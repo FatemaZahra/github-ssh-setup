@@ -75,13 +75,8 @@ cat filename.pub
 
 **Step 7:** Go to GitHub --> Settings --> SHS and GPG keys --> New SSH Key --> Paste the SSH Key copied from the terminal --> add a title --> click 'Add SSH key'
 
-**Step 8:** Add your SSH private key to the ssh-agent and store your passphrase in the keychain. Paste the command in terminal and replace filename with the name of the file where key is avavilable.
-```
-ssh-add -K ~/.ssh/filename
-```
-_Note: We do not need to use .pub_
 
-**Step 9:** Create a new repository on github and follow the steps to init, add, commit and push after selecting **SSH** on the quick setup page.
+**Step 8:** Create a new repository on github and follow the steps to init, add, commit and push after selecting **SSH** on the quick setup page.
 ![Screenshot 2022-07-29 at 16 37 10](https://user-images.githubusercontent.com/102330725/181794575-17aef9b4-943b-43da-a2b7-3596bacb7a89.png)
 
 ```
@@ -93,3 +88,16 @@ git remote add origin "your ssh link here"
 git push -u origin main
 ``` 
 
+If Permission is denied, follow the steps:
+
+**Step 9:** Start the ssh-agent in the background.
+```
+$ eval "$(ssh-agent -s)"
+> Agent pid 59566
+```
+
+**Step 10:** Add your SSH private key to the ssh-agent and store your passphrase in the keychain. Paste the command in terminal and replace filename with the name of the file where key is avavilable.
+```
+ssh-add -K ~/.ssh/filename
+```
+_Note: We do not need to use .pub_
